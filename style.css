@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100vw;
+  height: auto;
+  max-height: 100%;
+  background-color: cornflowerblue;
+}
+.mainContainer {
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 10px 10px 8px 10px #888888;
+  width: 500px;
+  margin-top: 5%;
+}
+.title {
+  padding: 5%;
+  text-align: center;
+}
+#ListContainer {
+  padding: 0 10% 10%;
+}
+li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 20px;
+}
+li div.checkbox {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+input[name="doneCheckbox"] {
+  width: 14px;
+  aspect-ratio: 1;
+}
+.task-items {
+  width: 70%;
+  display: flex;
+  justify-content: start;
+}
+.button-groups {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+}
+.button-groups .edit-btn,
+.button-groups .delete-btn {
+  background-color: white;
+}
+/* Button to add new task */
+.container-add-task {
+  border-top: ridge 5px #888888;
+
+  padding: 5% 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.input-new-task {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input#newTask {
+  height: 30px;
+}
+#importantCheckbox {
+  margin-right: 2%;
+}
+button {
+  border-style: none;
+  cursor: pointer;
+}
+.button-add-task {
+  width: 15%;
+  border-style: unset !important;
+  display: flex;
+  justify-content: end;
+}
+#btnSubmit ion-icon {
+  font-size: 30px;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+}
+#btnSubmit ion-icon:hover {
+  background-color: rgb(4, 40, 119);
+  color: white;
+}
